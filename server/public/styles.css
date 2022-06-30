@@ -1,3 +1,57 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
+  margin: auto;
+  
+}
+/* LIST */
+
+.item-name{
+
+
+}
+.item-des{
+
+}
+
+/* FORM */
+
+.title-div{
+  color: blue;
+ 
+
+}
+/* item */
+.add-item-text .add-items-and-des-text{
+  color: black;
+
+}
+
+.input-item-box{
+width: 50%;
+align-items: center;
+padding: 10px;
+}
+.item-label{
+margin-left: 20px;
+}
+/* description */
+.des-div{
+
+}
+.input-des-box{
+  width: 50%;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+.label-des{
+  margin-left: 20px;
+}
+/* button */
+.button-div{
+padding-top: 20px;
+}
+
+.add-button{
+
 }
