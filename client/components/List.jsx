@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+// import { getItems } from '../apis/items'
 import { fetchItems } from '../slices/items'
 
 function List() {
@@ -12,14 +13,14 @@ function List() {
 
   return (
     <div>
-      <div className="flex flex-row flex-wrap justify-evenly mt-5">
+      <div className="listDiv">
         {items.map((item) => (
           <div key={item.id} className>
             
-              <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">
+              <h5 className="itemName">
                 {item.name}
               </h5>
-              <p className="text-gray-700 text-base mb-4">{item.quote}</p>
+              <p className="itemDes">{item.des}</p>
             </div>
           
         ))}

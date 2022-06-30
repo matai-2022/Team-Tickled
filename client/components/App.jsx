@@ -1,25 +1,30 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { fetchFruits, selectFruits } from '../slices/fruits'
+import { fetchItems, createNewItem } from '../slices/items'
+
+import Form from './Form'
+import List from './List'
+// import Loader from './Loader'
+
+
+//not too sure where i got this items const from..
+//look again in the am
 
 function App() {
-  const fruits = useSelector(selectFruits)
+  const items = useSelector(createNewItem)
   const dispatch = useDispatch()
 
   useEffect(async () => {
-    await dispatch(fetchFruits())
+    await dispatch(fetchItems())
   }, [])
 
   return (
     <>
       <div className="app">
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-        <ul>
-          {fruits.map((fruit) => (
-            <li key={fruit}>{fruit}</li>
-          ))}
-        </ul>
+      <Form />
+      <List />
+      {/* <Loader /> */}
       </div>
     </>
   )
