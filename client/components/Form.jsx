@@ -27,7 +27,7 @@ function Form() {
   return (
 <div className="title-div">
       <h1 className="add-item-text">Add item</h1>
-      <h1 className="add-item-and-des-text">Add new items w descriptions</h1>
+      <h1 className="add-item-and-des-text">Add new items with a descriptions</h1>
       <form id="form" noValidate>
         <div className="item-div">
           <input
@@ -67,9 +67,19 @@ function Form() {
         <button
           type="button"
           onClick={handleSubmit}
-          className="add-button"
-        >
-          Add
+           className="add-button cube cube-hover">
+  <div className="bg-top">
+  <div className="bg-inner"></div>
+  </div>
+  <div className="bg-right">
+  <div className="bg-inner"></div>
+  </div>
+  <div className="bg">
+  <div className="bg-inner"></div>
+  </div>
+  <div className="text">Add</div>
+        
+         
         </button>
       </div>
     </div>
