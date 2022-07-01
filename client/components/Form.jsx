@@ -6,7 +6,7 @@ function Form() {
   const dispatch = useDispatch()
   const [form, setForm] = useState({
     item: '',
-    description: '',
+    des: '',
   })
 
   function handleChange(event) {
@@ -40,7 +40,10 @@ function Form() {
             onChange={handleChange}
             className="input-item-box"
           />
-          <label htmlFor="name" className="item-label"></label>
+          <label 
+          htmlFor="name" 
+          className="item-label">
+          </label>
         </div>
 
         <div className="des-div">
@@ -52,7 +55,10 @@ function Form() {
             onChange={handleChange}
             className="input-des-box"
           />
-          <label htmlFor="password" className="label-des"></label>
+          <label 
+          htmlFor="password" 
+          className="label-des">  
+          </label>
         </div>
       </form>
       <div className="button-div">
