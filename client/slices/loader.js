@@ -7,6 +7,8 @@ const slice = createSlice({
   extraReducers: {
     [fetchItems.pending || createNewItem.pending]: () => true,
     [fetchItems.fulfilled || createNewItem.fulfilled]: () => false,
+
+    // [fetchItems.rejected || createNewItem.rejected]: () => false,
   },
 })
 
