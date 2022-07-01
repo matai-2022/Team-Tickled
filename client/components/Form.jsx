@@ -6,7 +6,7 @@ function Form() {
   const dispatch = useDispatch()
   const [form, setForm] = useState({
     item: '',
-    description: '',
+    des: '',
   })
 
   function handleChange(event) {
@@ -14,7 +14,7 @@ function Form() {
       ...form,
       [event.target.name]: event.target.value,
     })
-    console.log(form)
+    //console.log(form)
   }
 
   async function handleSubmit(event) {
