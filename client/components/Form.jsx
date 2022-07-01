@@ -14,7 +14,7 @@ function Form() {
       ...form,
       [event.target.name]: event.target.value,
     })
-    console.log(form)
+    //console.log(form)
   }
 
   async function handleSubmit(event) {

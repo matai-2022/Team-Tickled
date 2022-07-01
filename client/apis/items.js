@@ -13,7 +13,7 @@ export function getItems() {
 //post
 //do we need counter to be sent????
 export function addNewItem(newItem) {
-  console.log(newItem)
+  //console.log(newItem)
   const { item, des, counter } = newItem
   return request
     .post(rootUrl)
