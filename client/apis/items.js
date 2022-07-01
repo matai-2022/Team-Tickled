@@ -6,7 +6,6 @@ export function getItems() {
   // return Promise.resolve([{ id: 1, item: 'skateboard', des: 'DO A KICK FLIP' }])
 
   return request.get(rootUrl + '/').then((res) => {
-
     return res.body
     //.items
   })
