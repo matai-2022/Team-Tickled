@@ -7,8 +7,8 @@ const router = express.Router()
 router.get('/', (req, res) => {
   db.getItems()
     .then((results) => {
-      console.log(results)
-      res.json(results)
+      // console.log(results)
+      setTimeout(() => res.json(results), 1000)
       return null
     })
     .catch((err) => {
