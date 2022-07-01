@@ -1,11 +1,10 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { createNewItem, fetchItems } from '../slices/items'
 
 function Form() {
   const dispatch = useDispatch()
   const [form, setForm] = useState({
-    
     item: '',
     description: '',
   })
@@ -13,8 +12,9 @@ function Form() {
   function handleChange(event) {
     setForm({
       ...form,
-      [event.target.item]: event.target.value,
+      [event.target.name]: event.target.value,
     })
+    console.log(form)
   }
 
   async function handleSubmit(event) {
@@ -25,24 +25,23 @@ function Form() {
     await dispatch(fetchItems())
   }
   return (
-<div className="title-div">
+    <div className="title-div">
       <h1 className="add-item-text">Add item</h1>
-      <h1 className="add-item-and-des-text">Add new items with a descriptions</h1>
+      <h1 className="add-item-and-des-text">
+        Add new items with a descriptions
+      </h1>
       <form id="form" noValidate>
         <div className="item-div">
           <input
             type="text"
             name="item"
             placeholder="motorcycle"
-            value={form.items}
+            value={form.item}
             onChange={handleChange}
             className="input-item-box"
           />
-          <label
-            htmlFor="name"
-            className="item-label"
-          >
-            Enter item 
+          <label htmlFor="name" className="item-label">
+            Enter item
           </label>
         </div>
 
@@ -55,10 +54,7 @@ function Form() {
             onChange={handleChange}
             className="input-des-box"
           />
-          <label
-            htmlFor="password"
-            className="label-des"
-          >
+          <label htmlFor="password" className="label-des">
             Enter description
           </label>
         </div>
@@ -67,23 +63,22 @@ function Form() {
         <button
           type="button"
           onClick={handleSubmit}
-           className="add-button cube cube-hover">
-  <div className="bg-top">
-  <div className="bg-inner"></div>
-  </div>
-  <div className="bg-right">
-  <div className="bg-inner"></div>
-  </div>
-  <div className="bg">
-  <div className="bg-inner"></div>
-  </div>
-  <div className="text">Add</div>
-        
-         
+          className="add-button cube cube-hover"
+        >
+          <div className="bg-top">
+            <div className="bg-inner"></div>
+          </div>
+          <div className="bg-right">
+            <div className="bg-inner"></div>
+          </div>
+          <div className="bg">
+            <div className="bg-inner"></div>
+          </div>
+          <div className="text">Add</div>
         </button>
       </div>
     </div>
   )
 }
 
-export default Form 
+export default Form
