@@ -9,6 +9,6 @@ const server = express()
 server.use(express.json())
 server.use(express.static(path.join(__dirname, 'public')))
 
-server.use('/', itemsRoutes)
+server.use('/banana', itemsRoutes)
 
 module.exports = server

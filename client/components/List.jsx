@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-//import { getItems } from '../apis/items'
+// import { getItems } from '../apis/items'
 import { fetchItems } from '../slices/items'
 
 function List() {
