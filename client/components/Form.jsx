@@ -26,37 +26,33 @@ function Form() {
   }
   return (
     <div className="title-div">
-      <h1 className="add-item-text">Add item</h1>
+      <h1 className="add-item-text">Listy</h1>
       <h1 className="add-item-and-des-text">
-        Add new items with a descriptions
+        Add new items with a description
       </h1>
       <form id="form" noValidate>
         <div className="item-div">
           <input
             type="text"
             name="item"
-            placeholder="motorcycle"
-            value={form.item}
+            placeholder="Enter Item"
+            value={form.items}
             onChange={handleChange}
             className="input-item-box"
           />
-          <label htmlFor="name" className="item-label">
-            Enter item
-          </label>
+          <label htmlFor="name" className="item-label"></label>
         </div>
 
         <div className="des-div">
           <input
             type="text"
             name="des"
-            placeholder="vroom vroom"
+            placeholder="Enter description"
             value={form.des}
             onChange={handleChange}
             className="input-des-box"
           />
-          <label htmlFor="password" className="label-des">
-            Enter description
-          </label>
+          <label htmlFor="password" className="label-des"></label>
         </div>
       </form>
       <div className="button-div">
