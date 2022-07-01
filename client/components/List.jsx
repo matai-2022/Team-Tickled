@@ -13,11 +13,14 @@ function List() {
 
   return (
     <div>
-      <div className="listDiv">
+      <div className="list-div">
         {items.map((elm) => (
           <div key={elm.id}>
-            <h5 className="itemName">{elm.item}</h5>
-            <p className="itemDes">{elm.des}</p>
+            <hr></hr>
+            <h5 className="item-name">{elm.item}</h5>
+           
+            <p className="item-des">{elm.des}</p>
+            <hr></hr>
           </div>
         ))}
       </div>

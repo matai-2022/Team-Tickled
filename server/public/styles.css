@@ -12,12 +12,24 @@ body {
 
 
 /* LIST */
+.list-div{
+  background-color: #30646e;
+  text-align: center;
+  margin-top: 15px;
+  border-style: solid;
+  border-color: white;
+  
+}
 
 .item-name{
-
+font-size: 30px;
+color: #f9f7f8;
 
 }
 .item-des{
+  font-size: large;
+  color:black ;
+  padding-bottom: 12px;
 
 }
 
@@ -29,10 +41,11 @@ body {
  
 
 }
-/* item */
+/* item s*/
 .add-item-text .add-items-and-des-text{
   color: black;
   font-size: 32px;
+
 
 }
 
