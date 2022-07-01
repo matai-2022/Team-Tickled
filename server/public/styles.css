@@ -12,12 +12,24 @@ body {
 
 
 /* LIST */
+.list-div{
+  background-color: #30646e;
+  text-align: center;
+  margin-top: 15px;
+  border-style: solid;
+  border-color: white;
+  
+}
 
 .item-name{
-
+font-size: 30px;
+color: #f9f7f8;
 
 }
 .item-des{
+  font-size: large;
+  color:black ;
+  padding-bottom: 12px;
 
 }
 
@@ -29,10 +41,11 @@ body {
  
 
 }
-/* item */
+/* item s*/
 .add-item-text .add-items-and-des-text{
   color: black;
   font-size: 32px;
+
 
 }
 
@@ -178,7 +191,7 @@ padding-top: 20px;
   animation: spinner-y0fdc1 2s infinite ease;
   transform-style: preserve-3d;
   margin: auto;
-  margin-top: 80px;
+  
  }
  
  .spinner > div {
