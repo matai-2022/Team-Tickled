@@ -1,10 +1,12 @@
 import request from 'superagent'
 //get
-const rootUrl = '/api/v1/items'
+const rootUrl = '/'
 //makes request to slices/items
 export function getItems() {
   // return Promise.resolve([{ id: 1, item: 'skateboard', des: 'DO A KICK FLIP' }])
-  return request.get(rootUrl).then((res) => {
+
+  return request.get(rootUrl + '/').then((res) => {
+
     return res.body
     //.items
   })
