@@ -5,7 +5,7 @@ import { fetchItems, createNewItem } from '../slices/items'
 
 import Form from './Form'
 import List from './List'
-// import Loader from './Loader'
+import Loader from './Loader'
 
 
 //not too sure where i got this items const from..
@@ -24,7 +24,7 @@ function App() {
       <div className="app">
       <Form />
       <List />
-      {/* <Loader /> */}
+      <Loader />
       </div>
     </>
   )
